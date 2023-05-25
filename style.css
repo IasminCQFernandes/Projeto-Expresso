@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/*MEDIA SCREEN*/
+
+
+/*GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(300deg,#0A1A44,#428ECC) ;
+}
+.container{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    font-family: 'Roboto', sem serifa;
+    font-weight: 300;
+}
+.container img{
+    width: 40%;
+    margin-bottom: 5%;
+}
+.container h1{
+    color: #fff;
+    width: 70%;
+    margin: 3%;
+    font-size: 3em;
+    margin-bottom: 15%;
+}
+.container a{
+    text-decoration: underline;
+    color: #fff;
+    background-color: #428ECC;
+    padding: 0.4em 2em;
+    box-shadow: 2px 2px 5px black;
+    margin: 3%;
+    border-radius: 50px;
+    font-size: 2em;
+}
+
+.right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.right img{
+    position: absolute;
+    width: 40%;
+    right: 10%;
+    margin: 3%;
+}
+
+#one{
+    color: #00C4CC;
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+    font-size: 1.2em;
+    border-radius: 20px;
+    
+    position: absolute;
+    right: 40%;
+    bottom: 31%;
+}
+#two{
+    color: #00C4CC;
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+    font-size: 1.2em;
+    border-radius: 20px;
+
+    position: absolute;
+    right: 40%;
+    bottom: 20%;
+}
+@media screen and (max-width:425px){
+    .container{
+        width: 100%;
+    }
+    .container img{
+        margin: 4%;
+    }
+    .container h1{
+        width: 70%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    .right{
+        display: none;
+    }
+
+   .display p{
+    color: #00C4CC;
+    background-color: #fff;
+    width: 80%;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.2em;
+    border-radius: 20px;
+    margin:auto;
+    margin-bottom: 15%;
+   }
+
+    .container h1{
+        font-size: 2em;
+    }
+    .container a{
+        text-align: center;
+        display: block;
+        font-size: 1em;
+        margin: 4%;
+    }
+}
+ 
+@media screen and (min-width:768px) {
+    .display{
+        display: none;
+    }
+    .container img{
+        margin: 4%;
+    }
+
+   
+    .container h1{
+        font-size: 2em;
+        margin: 5%;
+        margin-top: 20%;
+        margin-bottom: 25%;
+    }
+
+    .container a{
+        box-shadow: 2px 2px 3px black;
+        margin: 4%;
+        font-size: 1.2em;
+    }
+
+    .right img{
+        width: 60%;
+    }
+
+    #one{
+        right: 60%;
+        font-size: 1em;
+     
+    }
+    #two{
+        right: 60%;
+        font-size: 1em;
+   
+    }
+
+}
+
+
+@media screen and (min-width:1024px){
+    .display{
+        display: none;
+    }
+    .right img{
+        position: absolute;
+        width: 45%;
+        right: 15%;
+        margin: 4%;
+    }
+    #one{
+        width: 40%;
+        right: 50%;
+        bottom: 20%;
+    }
+    #two{
+        width: 40%;
+        right: 50%;
+        bottom: 10%;
+    }
+    .container img{
+        width: 40%;
+        margin-bottom: 0%;
+    }
+    .container h1{
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+}
